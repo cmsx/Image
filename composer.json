@@ -1,6 +1,6 @@
 {
     "name":"cmsx/image",
-    "version":"0.0.1",
+    "version":"0.1",
     "type":"library",
     "description":"CMSx Image Component",
     "homepage":"http://cmsx.ru",
@@ -13,7 +13,8 @@
         }
     ],
     "require":{
-        "php":">=5.3.0"
+        "php":">=5.3.0",
+        "ext-gd":"*"
     },
     "autoload":{
         "psr-0":{
