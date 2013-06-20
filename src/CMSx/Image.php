@@ -287,7 +287,7 @@ class Image
 
     // Прозрачность
     $new_image = imagecreatetruecolor($x, $y);
-    imagealphablending($new_image, false);
+    imagealphablending($new_image, true);
     imagefill($new_image, 0, 0, imagecolorallocatealpha($new_image, 0, 0, 0, 127));
     imagesavealpha($new_image, true);
 
@@ -324,7 +324,7 @@ class Image
 
     // Прозрачность
     $new_image = imagecreatetruecolor($width, $height);
-    imagealphablending($new_image, false);
+    imagealphablending($new_image, true);
     imagefill($new_image, 0, 0, imagecolorallocatealpha($new_image, 0, 0, 0, 127));
     imagesavealpha($new_image, true);
 

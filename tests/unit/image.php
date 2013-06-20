@@ -103,6 +103,12 @@ class ImageTest extends PHPUnit_Framework_TestCase
     Image::Me($this->bike)
       ->addWatermark($this->watermark, -5, -5)
       ->save($this->path_to_save . '/test_watermark_minus.jpg');
+
+    Image::Me($this->bike)
+      ->addResize(400, 300)
+      ->addCrop(300, 300)
+      ->addWatermark($this->watermark)
+      ->save($this->path_to_save . '/test_watermark_modifiers.jpg');
   }
 
   function resize_dimensions()
